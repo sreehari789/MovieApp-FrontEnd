@@ -1,0 +1,31 @@
+<!-- navabar......... -->
+<header>
+    <div>
+        <a class="navbar-brand fw-bold"  routerLink="/AllMovies" ><span>S</span>ILVER <span>S</span>CREEN</a>
+    </div>
+<ul>
+    <li style="font-size: 18px;"><span style="font-size: 26px; color: white;">{{user}}'s</span > PERSONAL DIARY </li>
+</ul> 
+</header>
+
+<!-- ---------- -->
+
+<div style="min-height: 100vh; margin-top: 10vh; text-align: center;">
+
+<div class="container">
+    <ul class="list-group list-group-horizontal m-4">
+        <li id="DateHeading"  class="list-group-item m-1">DATE</li>
+        <li  id="movieNameHeading" class="list-group-item m-1">Movie Name</li>
+        <li id="RatingHeading" class="list-group-item m-1">RATING</li>
+    </ul>
+    <ul class="list-group list-group-horizontal m-4" *ngFor="let Review of Reviews" >
+        <li id="Date"  class="list-group-item m-1 bg-dark">{{Review.date}}</li>
+        <li id="movieName" class="list-group-item m-1">{{Review.movieName}}</li>
+        <li class="list-group-item m-1 bg-dark">
+            <ngb-rating class="userreviews" [max]="5" [readonly]="true" [(rate)]="Review.rating"></ngb-rating>
+
+        </li>
+      </ul>
+</div>
+
+</div>

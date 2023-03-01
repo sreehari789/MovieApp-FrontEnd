@@ -1,0 +1,209 @@
+<div class="section1">
+  <!-- navbar -->
+  <header>
+      <nav class="navbar navbar-expand-lg " id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold"  routerLink="/" ><i class="fa-solid fa-clapperboard "></i><span>S</span>ILVER <span>S</span>CREEN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+      
+            <div id="features" class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3 " data-bs-toggle="modal" data-bs-target="#staticBackdrop1" >SIGN IN</a></li>
+                    <li class="nav-item"><a style="background-color: #323232;" class="nav-link me-lg-3 border border-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a></li>
+      
+                </ul>
+               
+            </div>
+        </div>
+      </nav>
+  </header>
+    <!-- ................. -->
+    
+    
+      <div id="welcomeNote" >
+    <div class="container">
+     <div class="row">
+       <div class="col-md-7" >
+          <h3>
+            Review films you’ve watched.
+          Save those you want to see.
+          Tell your friends what’s good. 
+          </h3>
+          <button class="animate__animated animate__backInDown"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">GET STARTED</button>
+       </div >
+       <div class="col-md-5">
+<img src="https://i.pinimg.com/originals/43/3d/83/433d83f7e481f35245f8c6bb7c7591d8.gif" alt="">   </div>
+     </div >
+    </div >
+      </div>
+</div >
+
+<!-------------- login modal---------------------->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"> <h4 class="text-center" >Login here</h4>
+        </h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form id="form1" class="container" (ngSubmit)="login()"  [formGroup]="LoginForm">
+  
+            <div class="mb-3">
+              <i class="fa-regular fa-user"></i>
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input name="uname" formControlName="uname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div *ngIf="this.LoginForm.get('uname')?.errors&&this.LoginForm.get('uname')?.touched" class="text-danger mb-2" >Invalid Username</div>
+            </div>
+            <div class="mb-3">
+              <i class="fa-solid fa-lock"></i>
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input name="pswd" formControlName="pswd" type="password" class="form-control" id="exampleInputPassword1">  
+               <div *ngIf="this.LoginForm.get('pswd')?.errors&&this.LoginForm.get('pswd')?.touched" class="text-danger mb-2" >Invalid Password</div>
+            </div>
+            <div class="text-danger">{{errormsg}}</div>
+            <button type="submit" class="btn btn-primary">login</button>
+            <div class="modal-footer mt-2">
+              <p>New user? Click here to <a style="background-color: rgb(8, 10, 11);padding: 5px; color: #14FFEC;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">CREATE ACCOUNT</a></p>
+            </div>
+          </form>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- -------------------------------------------- -->
+  
+  <div id="section3" class="container">
+  <!-- section............... -->
+    <section class="content-section  text-dark text-center" id="services">
+          <div class="content-section-heading">
+              <h1 >What We Offer...</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-2"></div>
+              <div class="col-lg-2 col-md-3 a1">
+                  <h4><i class="fa fa-pen"></i>
+                  </h4>
+                  <h4>Write and share reviews</h4>
+              </div>
+              <div class="col-lg-2 col-md-3 a1">
+                  <h4><i class="fa-solid fa-book"></i> </h4>
+                  <h4>Keep a diary of your film watching</h4>
+              </div>
+              <div class="col-lg-2 col-md-3 a1">
+                  <h4> <i class="fas fa-heart"></i>
+                  </h4>
+                  <h4 >
+                    Mark your loved films as Favorites
+                  </h4>
+              </div>
+              <div class="col-lg-2 col-md-3 a1">
+                  <h4><i class="fa-solid fa-clock"></i></h4>
+                  <h4>Create your own Watchlist</h4>
+              </div>
+              <div class="col-lg-2"></div>
+
+          </div>
+  </section>
+  
+  
+      
+      
+      
+        <!-- ..........register....Modal.......... -->
+      
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Create your SILVER SCREEN account here...</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+      
+              <form class="container" (ngSubmit)="register()"  [formGroup]="RegisterForm">
+                <div class="mb-3">
+                  <i class="fa-regular fa-envelope"></i>
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input name="mailId" formControlName="mailId" type="text" class="form-control" >
+                  <div *ngIf="this.RegisterForm.get('mailId')?.errors&&this.RegisterForm.get('mailId')?.touched" class="text-danger mb-2" >Invalid Email</div>
+                </div>
+                <div class="mb-3">
+                  <i class="fa-regular fa-user"></i>
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input name="uname" formControlName="uname" type="text" class="form-control" >
+                  <div *ngIf="this.RegisterForm.get('uname')?.errors&&this.RegisterForm.get('uname')?.touched" class="text-danger mb-2" >Invalid Username</div>
+                </div>
+                <div class="mb-3">
+                  <i class="fa-solid fa-lock"></i>
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input name="pass" formControlName="pswd" type="password" class="form-control" >  
+                   <div *ngIf="this.RegisterForm.get('pswd')?.errors&&this.RegisterForm.get('pswd')?.touched" class="text-danger mb-2" >Invalid Password</div>
+          
+                </div>
+      
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                </form>
+            
+            </div>
+      
+        </div>
+      </div>
+    
+    </div>
+  </div >
+
+
+  <section class="section4">
+  <div class="container">
+    <div class="row">
+      <h1>Track. Discover. Share.
+       </h1>
+      <div class="col-md-6 img1">
+        <h4>Track what you watch and when. Discover what's hot and share reviews and ratings...
+          </h4>
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            JOIN FOR FREE
+          </button>
+    </div>
+    <div class="col-md-6 img2">
+    
+    </div>
+    </div >
+
+  </div >
+
+  <!-- .... -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 img4">
+    
+      </div>
+
+      <div class="col-md-6 img3">
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta in repellat! Totam, repellat omnis sapiente molestiae illum enim ab officiis magnam, autem.
+          </h4>
+          
+    </div>
+  
+    </div >
+  </div >
+  <div style="text-align: end; margin: 15px;">
+    <button id="goToTop" (click)="onEdit()"><i class="fa-solid fa-turn-up"></i></button>
+
+</div>  
+  </section>
+ 
+

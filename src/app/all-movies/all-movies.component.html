@@ -1,0 +1,49 @@
+<!-- navabar......... -->
+<header>
+    <div>
+        <a class="navbar-brand fw-bold"  routerLink="/AllMovies" ><span>S</span>ILVER <span>S</span>CREEN</a>
+    </div>
+<ul>
+    <li><i data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" class="fa-solid fa-bars"></i></li>
+</ul> 
+</header>
+
+<!-- ṣection---------------------------->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-4">
+        <div class="row gx-4 gx-lg-5  row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div  class="col mb-5 " *ngFor="let movie of movies">
+                <div routerLink="/View-Movie/{{movie.id}}" id="moviecard" class="card h-75" >
+                    <!-- movie poster-->
+                   <div> <img class="" [src]="movie.Poster" alt="movie.Title" /></div >                   
+                </div>
+                <div class="card-body p-2">
+                    <div class="text-center">
+                        <a routerLink="/View-Movie/{{movie.id}}">
+                            <h5 class="fw-bolder">{{movie.Title}} <span>({{movie.Year}})</span></h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section >
+<div style="text-align: end; margin: 15px;">
+    <button id="goToTop" (click)="onEdit()"><i class="fa-solid fa-turn-up"></i></button>
+
+</div>  
+<!-- offcanvas.................... -->
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true"  tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><i class="fa-solid fa-user text-light"></i>{{user}}</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+<ul>
+    <li><i class="fa fa-heart"></i>&nbsp;&nbsp; FAVORITES</li>
+    <li routerLink="/Watchlist"> <i class="fa-solid fa-clock"></i>&nbsp;&nbsp; WATCHLIST </li>
+    <li routerLink="/Diary"><i class="fa-solid fa-book"></i>&nbsp;&nbsp; DIARY</li>
+    <li (click)=" signOut()"><i class="fa-solid fa-arrow-right-from-bracket text-danger"></i>&nbsp;&nbsp; SIGN OUT</li>
+</ul>  </div>
+</div>

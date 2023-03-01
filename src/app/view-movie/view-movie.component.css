@@ -1,0 +1,162 @@
+
+
+#posterL{
+    background-color: rgb(15, 13, 2);
+width: 75%;
+border: 2px solid #0F4C75;
+box-shadow: rgb(27, 56, 68) 0px 2px 4px 0px, rgb(23, 22, 22) 0px 2px 16px 0px;
+}
+#posterL h5{
+font-size: 15px;
+padding: 10px;
+padding: 10px 20px 0px 20px;
+text-align: center
+}
+#Director{
+    font-weight: 700;
+}
+
+#poster{
+    height: 400px;
+    width: 100%;
+}
+section {
+    color: white;
+
+}
+section p{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    color: rgb(254, 242, 227);
+}
+
+#buttons button{
+margin: 4rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 3.5rem;
+    background-color: rgb(11, 11, 11);
+    border: 2px solid #14FFEC;
+  border-radius: 14px;
+}
+#details div{
+    border: 2px solid #fff;
+    margin: 6px;
+   padding: 5px 10px 5px 10px;
+   border-radius: 1px;
+   margin-top: 20px;
+  background-color: rgba(18, 18, 16, 0.8);
+}
+
+
+#buttons button  {
+    transform: 3s;
+ }
+ #buttons button:hover{
+ transform: scale(1.1);
+ transition: 3s;
+ background-color: rgb(11, 11, 11);
+ border: 2px solid rgb(13, 121, 42);
+
+ }
+.ratings{
+    width: 100%;
+}
+
+#reviews p{
+    margin-left: 10px;
+color: rgb(112, 115, 173);
+font-size: 20px;
+font-family: 'Cinzel', serif;
+font-weight: 600;
+}
+#reviews h5{
+    margin-left: 80px;
+    font-style: italic;
+}
+.by{
+    color: gray;
+    font-size: 15px;
+}
+#reviews img{
+    width: 45px;
+}
+/* post review.................. */
+.modal-header{
+    background-color: #212121;
+    color:white ;
+}
+ngb-rating{
+    font-size: 65px;
+    color: #14FFEC;
+}
+
+.modal-footer button{
+margin-left: 10px;
+width: 4rem;
+}
+.modal-body{
+    background-color: #323232 ;
+}
+.newDate{
+    font-size: 17px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    color: rgb(153, 143, 143);
+}
+/* user star rating */
+.userreviews{
+    color: #14FFEC;
+font-size: 30px;
+margin-left: 70px;
+
+}
+.bg{
+    background-color: #323232;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: rgba(7, 65, 107, 0.25) 0px 2px 5px -1px, rgba(8, 170, 182, 0.3) 0px 1px 3px -1px;}
+.bg h6{
+    position: absolute;
+    right: 7%;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: #0D7377;
+    color: rgb(252, 249, 249);
+}
+
+#p1{
+    position: absolute;
+    top: 8%;
+    z-index: -1;
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    opacity: .2;
+}
+/* cast and crew details........ */
+.others{
+    margin-top: 70px;
+}
+.nav-link{
+    background-color: #0D7377;
+    margin: 8px;
+    color: white;
+}
+.tab-pane {
+    margin-top: 90px;
+    padding: 10px;
+}
+.tab-content{
+    background-color: #323232;
+    box-shadow: rgba(7, 65, 107, 0.25) 0px 2px 5px -1px, rgba(8, 170, 182, 0.3) 0px 1px 3px -1px;
+
+    height: 32vh;
+    width: 100%;
+}
+.ratings{
+    font-size: 17px;
+    margin-bottom: 40;
+}

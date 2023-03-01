@@ -1,0 +1,66 @@
+footer{
+    background-color: #201e1d;
+    min-height: 12vh;
+    font-size: 19px;
+    font-weight: 700;
+display: block;
+}
+footer .container p{
+  color: rgb(232, 238, 238);
+}
+.cobtent{
+    display: none;
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    position: absolute;
+    left :55%;
+    justify-content: center;
+    align-items: center;
+}
+.cobtent div{
+    margin-left: 40px;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 655px) {
+  
+    .cobtent{
+        left: 40%;
+    }
+    footer{
+      background-color: #201e1d;
+      min-height: 12vh;
+      font-size: 12px;
+      font-weight: 400;
+  
+  }
+  .cobtent{
+    display: none;
+    color: white;
+    font-size: 11px;
+    margin: 4px;
+    position: absolute;
+    left :25%;
+    justify-content: center;
+    align-items: center;
+}
+  }
+  @media screen and (max-width: 400px) {
+    footer{
+      background-color: #201e1d;
+      min-height: 12vh;
+      font-size: 8px;
+      font-weight: 400;
+  }
+  .cobtent{
+font-size: 7px;
+margin: 0;
+padding: 0;  }
+.cobtent div{
+  margin-left: 20px;
+  padding: 0;
+}
+  }
+

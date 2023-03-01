@@ -1,0 +1,190 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+color: #14FFEC;
+ align-items: center;
+min-height: 12vh;
+}
+header div{
+    display: flex;
+    flex: 2;
+    margin-left: 30px;
+    letter-spacing: 7px;
+    font-weight: 900;
+    color: #8f9aeb;
+    font-size: 25PX;
+    padding-left: 20px;
+    font-family: 'Trocchi', serif;
+}
+header div a{
+    margin-left: 10px;
+}
+ header span{
+    color: rgb(228, 246, 252);
+    font-size: 30px;
+}
+
+header ul{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    list-style: none;
+    align-items: center;
+}
+header ul li{
+    margin-left: 38px;
+    text-decoration: none;
+    align-items: center;
+cursor: pointer;
+}
+header img{
+    width: 60px;
+    padding: 2px;
+    align-self: center;
+    margin-top: 8px;
+}
+header i{
+    font-size: 35px;
+}
+/* ..................................................... */
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+overflow: hidden;
+}
+
+#moviecard{
+    color: white;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #24384a, rgb(15, 110, 23)) 1;  
+      transform: 2s;
+    overflow: hidden;
+  cursor: pointer;
+}
+#moviecard:hover{
+    transform: scale(1.1);
+    transition: 5s;
+}
+.card-body h5{
+    letter-spacing: 1px;
+text-align: center;
+font-size: 21px;
+font-weight: 700;
+margin-top: 4px;
+font-family: 'Merriweather Sans'
+}
+
+
+section a{
+    text-decoration: none;
+    color: white;
+
+}
+/* gotottop icon........ */
+#goToTop{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 4px solid #14FFEC;
+
+}
+#goToTop:hover{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #14FFEC;
+    border: 4px solid #14FFEC;
+}
+#goToTop i{
+    font-size: 25px;
+    color: white;
+}
+/* offcanvas......... */
+.offcanvas-header{
+    background-color: #2c2928;
+    color: white;
+    height: 12vh;
+}
+.offcanvas-header i{
+    border: 3px solid rgb(255, 255, 254);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 32px;
+    margin-right: 10px;
+   background-color: rgb(108, 102, 102);
+}
+.offcanvas-header h5{
+    align-items: center;
+}
+.offcanvas-header button{
+    background-color: white;
+}
+.offcanvas-body{
+    background-color:#323232;
+    color: rgb(31, 43, 9);
+
+}
+.offcanvas-body i{
+    color: #fff;
+}
+.offcanvas-body ul li{
+    list-style: none;
+font-size: 22px;
+font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 15px;
+    color: #14FFEC;
+    background-color:#212121;
+}
+.offcanvas-body ul li:hover{
+    color:#fff;
+    background-color: #0D7377;
+
+}
+
+
+  /*................................................  */
+
+@media screen and (max-width: 710px) {
+    header div {
+font-size: 15px;
+
+}
+  }
+
+@media screen and (max-width: 555px) {
+    header div {
+font-size: 11px;
+
+}
+header span{
+    color: silver;
+    font-size: 18px;
+}
+header i{
+    font-size: 20px;
+}
+header{
+    min-height: 7vh;
+}
+
+}
+
+@media screen and (max-width: 510px) {
+  #moviecard h5{
+    letter-spacing: 0px;
+text-align: left;
+font-size: 15px;
+font-weight: 700;
+}
+
+  }
+  

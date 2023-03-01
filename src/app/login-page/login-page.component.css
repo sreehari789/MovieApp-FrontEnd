@@ -1,0 +1,273 @@
+*{
+ 
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #141010;
+width: 100%;
+min-height: 11vh;
+}
+header i{
+  color: #14FFEC;
+  display: none;
+}
+
+span{
+  color: rgb(228, 246, 252);
+  font-size: 30px;
+}
+.navbar-brand{
+  letter-spacing: 7px;
+  font-weight: 900;
+  color: #8f9aeb;
+  font-size: 25PX;
+  padding-left: 20px;
+  font-family: 'Trocchi', serif;
+}
+.nav-item a{
+  font-size: 16px;
+  color: #14FFEC;
+  font-weight: 700;
+cursor: pointer;
+}
+.nav-item a:hover{
+  color: #fdfafa;
+}
+/* ---------------------- */
+.modal-content{
+  background-color: #424874;
+  color: #BBE1FA;
+  border: 2px solid #fff;
+}
+.modal-content i{
+  margin-right: 9px;
+  color: #fff;
+}
+.modal-header{
+  background-color: #1B262C;
+}
+
+.modal-footer{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.modal-footer a{
+  cursor: pointer;
+}
+
+/* .................... */
+.section1{
+  background-color: #24384a;
+  
+}
+
+#welcomeNote{
+ min-height: 75vh;
+  margin-top: 14vh;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcomeNote h3{
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  line-height: 4rem;
+}
+#welcomeNote button{
+  border: 3px solid #14FFEC;
+  letter-spacing: .2rem;
+          padding: 10px;
+       width: 11rem;
+       height: 4rem;
+       margin-top: 2rem;
+      padding: 1rem,2rem,1rem;
+      font-weight: 700;
+     box-shadow: rgba(12, 17, 22, 0.3) 0px 1px 2px 0px, rgba(7, 8, 9, 0.15) 0px 1px 3px 1px;
+     box-shadow: rgba(22, 22, 28, 0.25) 0px 2px 5px -1px, rgba(15, 11, 11, 0.3) 0px 1px 3px -1px;
+     background-color: #212121;
+     color: #14FFEC;
+     border-radius: 8px;
+     transition: 0.7s;
+
+}
+#welcomeNote button:hover{
+  background-color: #14FFEC;
+  color: rgb(17, 12, 12);
+  border: 2px solid #080808;
+
+}
+#welcomeNote img {
+  width: 100%;
+  height: 100%;
+}
+.a1{
+  border: 10px solid #0b0b05;
+  border-radius: 10px;
+  background-color: #24384a;
+  align-items: center;
+  justify-content: center;
+  transform: 2s;
+
+}
+.a1:hover{
+  transform: scale(1.1);
+  transition: 4s;
+  background-color: #09090a;
+}
+
+section{
+  margin-top: 15vh;
+  height: 75vh;
+}
+.content-section-heading h1{
+  color: #14FFEC;
+  font-size: 55px;
+  margin: 100px;
+  font-weight: 600;
+  font-family: 'Courgette', cursive;
+
+}
+section h4{
+  padding: 20px;
+  color: rgb(243, 238, 238);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section i{
+  font-size: 80px;
+  color: #72b8bb;
+}
+
+
+#section3{
+  background-color: #30516f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%2324384A'/%3E%3Cstop offset='1' stop-color='%23375672'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%232e475e'/%3E%3Cstop offset='1' stop-color='%23375672'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.15' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+width: 100%; height: 90vh;
+margin-top: 20px;
+}
+.section4{
+  height: 190vh;
+  background-color: #375672;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%2324384A'/%3E%3Cstop offset='1' stop-color='%23375672'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%232e475e'/%3E%3Cstop offset='1' stop-color='%23375672'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.15' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 50px;
+}
+.section4 .row{
+  background-color: #24384a;
+
+}
+.img1{
+  height: 75vh;
+  width: 45%;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+.img1 button{
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+margin-top: 20px;
+background-color: black;
+color: white;
+border: 4px solid white;
+transition: 0.7s;
+border-radius: 2rem;
+
+}
+.img1 button:hover{
+  background-color: #14FFEC;
+  color: rgb(16, 16, 16);
+  border: 4px solid white;
+
+}
+
+ /* ......................... */
+.img1 h4{
+  font-size: 38px;
+  font-family: 'Trocchi', serif;
+
+}
+.img2{
+  height: 75vh;
+  background-image: url('./webimg2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 15px;
+  width: 37%;
+  background-color: #05050c;
+}
+
+.section4 h1{
+  font-size: 65px;
+  font-weight: 600;
+  font-family: 'Courgette', cursive;
+text-align: center;
+color: #14FFEC;
+ 
+}
+
+.img4{
+  height: 75vh;
+  background-image: url('./webimg1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin: 15px;
+  width: 45%;
+  background-color: #05050c;
+}
+.img3 h4{
+  font-size: 38px;
+  font-family: 'Trocchi', serif;
+}
+.img3{
+  height: 75vh;
+  width: 45%;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* gotottop icon........ */
+#goToTop{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 4px solid #14FFEC;
+
+}
+#goToTop:hover{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #14FFEC;
+  border: 4px solid #14FFEC;
+}
+#goToTop i{
+  font-size: 25px;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  
+}
